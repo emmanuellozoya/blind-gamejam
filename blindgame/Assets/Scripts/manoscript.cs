@@ -17,10 +17,12 @@ public class manoscript : MonoBehaviour {
 
 		MinYAngle = 40;
 		MaxYAngle = 140;
-		MinXAngle = 200;
+		MinXAngle = 220;
 		MaxXAngle = 330;
 
-		this.gameObject.transform.localRotation = Quaternion.Euler (MaxYAngle-Input.mousePosition.y/Screen.height*(MaxYAngle-MinYAngle),0,MaxXAngle-Input.mousePosition.x/Screen.width*(MaxXAngle-MinXAngle));
-		Debug.Log (Input.mousePosition);
+
+		//this.gameObject.transform.localRotation = Quaternion.Euler (MaxYAngle-Input.mousePosition.y/Screen.height*(MaxYAngle-MinYAngle),0,MaxXAngle-Input.mousePosition.x/Screen.width*(MaxXAngle-MinXAngle));
+
+		//Debug.Log (Input.mousePosition);
 	}
 }
