@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AudioManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AudioManager.cs" Line="15" Column="1" />
+      <File FileName="Assets\Scripts\Obstaculo.cs" Line="26" Column="23" />
+      <File FileName="Assets\Scripts\Mano.cs" Line="18" Column="65" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="7" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="38" />
+      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="31" />
+      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="15" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
