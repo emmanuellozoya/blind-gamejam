@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Obstaculo : MonoBehaviour {
 
-	public int clipnum;
 	// Use this for initialization
 	void Start () {
 	}
@@ -20,17 +19,9 @@ public class Obstaculo : MonoBehaviour {
 
 	public void EjecutaSonido()
 	{
-		//AudioManager.Instance.audio.clip = clip;
-		//if (AudioManager.Instance.audio.isPlaying == false)
+		if(this .transform.GetChild(0).GetComponent<AudioSource>() != null)
 		{
-			if(this .transform.GetChild(0).GetComponent<AudioSource>() != null)
-			{
-				this .transform.GetChild(0).GetComponent<AudioSource>().Play();
-			}
-			//AudioManager.setClip(clipnum);
-			//AudioManager.StartSound();
+			this .transform.GetChild(0).GetComponent<AudioSource>().Play();
 		}
-		//Debug.Log ("Ejecutando sonido");
-
 	}
 }

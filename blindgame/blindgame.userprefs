@@ -1,17 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstaculo.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Shaders\Proximity.shader">
     <Files>
-      <File FileName="Assets/Scripts/Obstaculo.cs" Line="16" Column="36" />
+      <File FileName="Assets\Scripts\AudioManager.cs" Line="29" Column="25" />
+      <File FileName="Assets\Scripts\Obstaculo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mano.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\CarMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Shaders\Proximity.shader" Line="18" Column="25" />
+      <File FileName="Assets\Scripts\ProximityDetector.cs" Line="14" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="38" />
-      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="31" />
-      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Scripts\AudioManager.cs" line="15" />
-      <Breakpoint file="/Users/alfonsonava/blind-gamejam/blindgame/Assets/Scripts/Obstaculo.cs" line="17" />
-      <Breakpoint file="/Users/alfonsonava/blind-gamejam/blindgame/Assets/Scripts/Obstaculo.cs" line="26" />
+      <Breakpoint file="C:\Users\animacion\Documents\GitHub\blind-gamejam\blindgame\Assets\Resources\Shaders\Proximity.shader" line="48" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
