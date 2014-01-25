@@ -3,8 +3,17 @@ using System.Collections;
 
 public class Obstaculo : MonoBehaviour {
 
+	public Material Shaded;
+	public Material[] UnShadedRegular;
 	// Use this for initialization
 	void Start () {
+		if (Shaded == null) {
+			Shaded = Resources.Load("Standard Assets/Toon Shading/Sources/Toony-Lighted Outline") as Material;
+		}
+		this.renderer.enabled = false;
+		UnShadedRegular = this.renderer.materials;
+		this.renderer.materials = new Material[]{};
+		this.renderer.material = Shaded;
 	}
 	
 	// Update is called once per frame
@@ -14,7 +23,12 @@ public class Obstaculo : MonoBehaviour {
 
 	void OnCollisionEnter (Collision other)
 	{
-		EjecutaSonido ();
+		if (other.transform.name == "perro") {
+						MuestraObjeto ();
+				} else {
+			MuestraShadersIniciales(); 
+						EjecutaSonido ();
+				}
 	}
 
 	public void EjecutaSonido()
@@ -24,4 +38,15 @@ public class Obstaculo : MonoBehaviour {
 			this .transform.GetChild(0).GetComponent<AudioSource>().Play();
 		}
 	}
+
+	void MuestraShadersIniciales ()
+	{
+		this.renderer.materials = UnShadedRegular;
+	}
+
+	void MuestraObjeto ()
+	{
+		this.renderer.enabled = true;
+	}
+
 }
