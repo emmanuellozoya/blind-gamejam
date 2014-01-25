@@ -23,7 +23,7 @@ public class Obstaculo : MonoBehaviour {
 		//AudioManager.Instance.audio.clip = clip;
 		//if (AudioManager.Instance.audio.isPlaying == false)
 		{
-			if(this.GetComponent<AudioSource>() != null)
+			if(this .transform.GetChild(0).GetComponent<AudioSource>() != null)
 			{
 				this .transform.GetChild(0).GetComponent<AudioSource>().Play();
 			}
