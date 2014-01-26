@@ -49,7 +49,7 @@ public class MovimientoCamara : MonoBehaviour {
 		if(Input.GetKey(KeyCode.RightArrow))
 			transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
-		Debug.Log (Input.mousePosition.x);
+		//Debug.Log (Input.mousePosition.x);
 
 
 		if (Input.mousePosition.x < 1*Screen.width/4)  {
@@ -58,8 +58,34 @@ public class MovimientoCamara : MonoBehaviour {
 
 		if (Input.mousePosition.x > 3*Screen.width/4) {
 						transform.Rotate (Vector3.up, turnSpeed * Time.deltaTime);
-				}
+				
+		}
 
+		//Debug.Log (this.gameObject.transform.localRotation.eulerAngles.x);
+		/*
+		if (Input.mousePosition.y < 1*Screen.height/4)  {
+			if (OldVectAng.x <=30 || OldVectAng.x > 330)
+			{ 
+				transform.Rotate(Vector3.left, -turnSpeed * Time.deltaTime);
+			}
+			if (!(this.gameObject.transform.localRotation.eulerAngles.x <=30 || this.gameObject.transform.localRotation.eulerAngles.x > 330))
+			{ 
+				transform.Rotate(Vector3.left, turnSpeed * Time.deltaTime);;
+			}
+
+		}
+
+		if (Input.mousePosition.y > 3*Screen.height/4) {
+			if (this.gameObject.transform.localRotation.eulerAngles.x <= 30 || this.gameObject.transform.localRotation.eulerAngles.x > 330) 
+			{ 
+				transform.Rotate(Vector3.left, turnSpeed * Time.deltaTime);
+			}
+			if (!(this.gameObject.transform.localRotation.eulerAngles.x <=30 || this.gameObject.transform.localRotation.eulerAngles.x > 330))
+			{ 
+				transform.Rotate(Vector3.left, -turnSpeed * Time.deltaTime);
+			}
+		}
+		*/
 
 	}
 }
