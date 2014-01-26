@@ -23,12 +23,26 @@ public class Obstaculo : MonoBehaviour {
 
 	void OnCollisionEnter (Collision other)
 	{
-		if (other.transform.name == "perro") {
-						MuestraObjeto ();
-				} else {
+		if (other.transform.name == "perro")
+		{
+			MuestraObjeto ();
+			SphereCollider dogSphereCollider = other.transform.GetComponent<SphereCollider>();
+			Mesh meshObstaculo = GetComponent<MeshFilter>().mesh;
+			Vector3[] vertices = meshObstaculo.vertices;
+			Color[] colors = new Color[vertices.Length];
+			int i = 0;
+			while(i< vertices.Length)
+			{
+				if(dogSphereCollider.bounds.Contains(vertices[i]))
+				   colors[i] = Color.clear;
+				i++;
+			}
+		}
+		else
+		{
 			MuestraShadersIniciales(); 
-						EjecutaSonido ();
-				}
+			EjecutaSonido ();
+		}
 	}
 
 	public void EjecutaSonido()
